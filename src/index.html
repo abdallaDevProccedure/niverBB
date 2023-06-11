@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
   <link rel="stylesheet" href="style.css">
-  <title>Título da página</title>
+  <title>Calebe</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -18,8 +18,8 @@
     </div>
   </div>
   <main>
+    <h1 id="name">Callebe Abdalla</h1>
     <div id="carousel" class="carousel">
-      <h1 id="name">Callebe Abdalla</h1>
       <div class="carousel-container">
         <img class="img" src="assets/image1.jpeg" alt="Imagem 1">
         <img class="img" src="assets/image2.jpeg" alt="Imagem 2">
@@ -30,6 +30,7 @@
     <div id="div1">
       
     </div>
+    <button class="button" onclick="redirectToWhatsApp()">Confirme aqui</button>
   </main>
   <footer class="footer">
     <div class="divFooter">
@@ -56,6 +57,15 @@
   </footer>
   
   <script>
+    function redirectToWhatsApp() {
+    let phoneNumber = "+551195333300";
+  
+    let message = "Olá! Estou confirmando minha presença. Parabéns pelo aniversário!";
+  
+    let url = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodeURIComponent(message);
+  
+    window.location.href = url;
+  }
     const carouselContainer = document.querySelector('.carousel-container');
     let currentPosition = 0;
     const images = Array.from(carouselContainer.children);
@@ -74,11 +84,11 @@
 
     setInterval(moveCarousel, 3000);
 
-    var nameElement = document.getElementById("name");
-    var fontSize = 48;
-    var increasing = true;
-    var colors = ["white", "red", "blue", "green", "yellow"];
-    var currentColor = 0;
+    let nameElement = document.getElementById("name");
+    let fontSize = 48;
+    let increasing = true;
+    let colors = ["white", "red", "blue", "green", "yellow"];
+    let currentColor = 0;
 
     function animateName() {
       if (increasing) {
