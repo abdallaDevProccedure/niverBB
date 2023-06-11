@@ -29,6 +29,15 @@ body {
   margin-right: 2rem;
 }
 
+@font-face {
+  font-family: 'CustomFont';
+  src: url('fonts/CHERL__.TTF') format('truetype');
+}
+
+h1 {
+  font-family: 'CustomFont', sans-serif;
+}
+
 #header2 {
   display: flex;
   justify-content: center;
