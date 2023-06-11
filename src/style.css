@@ -24,7 +24,7 @@ body {
   align-items: center;
   text-decoration: double;
   text-align: center;
-  margin-bottom: -20px;
+  margin-bottom: -60px;
   margin-left: 2rem;
   margin-right: 2rem;
 }
@@ -37,50 +37,51 @@ body {
   text-align: center;
   margin-left: 2rem;
   margin-right: 2rem;
+  margin-bottom: -60px;
 }
 
 #pr {
   color: rgb(7, 132, 143);
-  font-size: 1.7rem;
+  font-size: 2.7rem;
   margin-right: 0.3rem;
 }
 
 #sc {
   color: rgb(23, 143, 7);
-  font-size: 1.7rem;
+  font-size: 2rem;
   margin-right: 0.3rem;
 }
 
 #tr {
   color: rgb(179, 7, 10);
-  font-size: 1.7rem;
+  font-size: 2.7rem;
   margin-right: 0.3rem;
 }
 
 #qt {
   color: rgb(5, 32, 106);
-  font-size: 1.7rem;
+  font-size: 2rem;
   margin-right: 0.3rem;
 
 }
 
 #qto {
   color: rgb(245, 229, 8);
-  font-size: 1.7rem;
+  font-size: 2.7rem;
   margin-right: 0.3rem;
 
 }
 
 #sx {
   color: rgb(227, 7, 7);
-  font-size: 1.7rem;
+  font-size: 2rem;
   margin-right: 0.3rem;
 
 }
 
 #st {
   color: rgb(5, 32, 106);
-  font-size: 1.7rem;
+  font-size: 2.7rem;
   margin-right: 0.3rem;
 
 }
