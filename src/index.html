@@ -92,7 +92,7 @@
     setInterval(moveCarousel, 3000);
 
     let nameElement = document.getElementById("name");
-    let fontSize = 65;
+    let fontSize = 58;
     let increasing = true;
     let colors = ["white", "red", "blue", "green", "yellow"];
     let currentColor = 0;
@@ -100,12 +100,12 @@
     function animateName() {
       if (increasing) {
         fontSize++;
-        if (fontSize >= 80) {
+        if (fontSize >= 72) {
           increasing = false;
         }
       } else {
         fontSize--;
-        if (fontSize <= 65) {
+        if (fontSize <= 58) {
           increasing = true;
         }
       }
