@@ -8,8 +8,13 @@ body {
   padding-right: 10px;
 }
 
+#header {
+  font-family: 'Special Elite', cursive;
+}
+
 #name {
     color: white;
+    font-family: 'Ephesis', cursive;
     font-size: 3rem;
     justify-content: center;
     align-items: center;
@@ -29,15 +34,6 @@ body {
   margin-right: 2rem;
 }
 
-@font-face {
-  font-family: 'CustomFont';
-  src: url('fonts/CHERL__.TTF') format('truetype');
-}
-
-h1 {
-  font-family: 'CustomFont', sans-serif;
-}
-
 #header2 {
   display: flex;
   justify-content: center;
@@ -51,46 +47,46 @@ h1 {
 
 #pr {
   color: rgb(7, 132, 143);
-  font-size: 2.7rem;
+  font-size: 3rem;
   margin-right: 0.3rem;
 }
 
 #sc {
   color: rgb(23, 143, 7);
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-right: 0.3rem;
 }
 
 #tr {
   color: rgb(179, 7, 10);
-  font-size: 2.7rem;
+  font-size: 3rem;
   margin-right: 0.3rem;
 }
 
 #qt {
   color: rgb(5, 32, 106);
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-right: 0.3rem;
 
 }
 
 #qto {
   color: rgb(245, 229, 8);
-  font-size: 2.7rem;
+  font-size: 3rem;
   margin-right: 0.3rem;
 
 }
 
 #sx {
   color: rgb(227, 7, 7);
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-right: 0.3rem;
 
 }
 
 #st {
   color: rgb(5, 32, 106);
-  font-size: 2.7rem;
+  font-size: 3rem;
   margin-right: 0.3rem;
 
 }

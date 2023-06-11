@@ -6,17 +6,13 @@
   <title>Calebe</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<style>
-  @font-face {
-  font-family: 'CustomFont';
-  src: url('fonts/CHERL__.TTF') format('truetype');
-}
-
-h1 {
-  font-family: 'CustomFont', sans-serif;
-}
-</style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  </head>
 <body>
   <div id="header">
     <div id="header1">
@@ -34,6 +30,7 @@ h1 {
     <div id="carousel" class="carousel">
       <div class="carousel-container">
         <img class="img" src="assets/image1.jpeg" alt="Imagem 1">
+        <img class="img" src="assets/image7.jpeg" alt="Imagem 4">
         <img class="img" src="assets/image5.jpeg" alt="Imagem 4">
         <img class="img" src="assets/image2.jpeg" alt="Imagem 2">
         <img class="img" src="assets/image3.jpeg" alt="Imagem 3">
@@ -95,7 +92,7 @@ h1 {
     setInterval(moveCarousel, 3000);
 
     let nameElement = document.getElementById("name");
-    let fontSize = 48;
+    let fontSize = 65;
     let increasing = true;
     let colors = ["white", "red", "blue", "green", "yellow"];
     let currentColor = 0;
@@ -103,12 +100,12 @@ h1 {
     function animateName() {
       if (increasing) {
         fontSize++;
-        if (fontSize >= 56) {
+        if (fontSize >= 80) {
           increasing = false;
         }
       } else {
         fontSize--;
-        if (fontSize <= 48) {
+        if (fontSize <= 65) {
           increasing = true;
         }
       }
