@@ -11,12 +11,10 @@
     <div id="header1">
       <h1 id="pr">Venha</h1>
       <h1 id="sc">comemorar</h1>
-      <h1 id="qt">meu</h1>
     </div>
     <div id="header2">
+      <h1 id="qt">meu</h1>
       <h1 id="qto">aniversário</h1>
-      <h1 id="sx">na</h1>
-      <h1 id="st">Fazendinha</h1>
     </div>
   </div>
   <main>
@@ -57,6 +55,57 @@
     </div>
   </footer>
   
-  <script src="index.js"></script>
+  <script>
+    const carouselContainer = document.querySelector('.carousel-container');
+    let currentPosition = 0;
+    const images = Array.from(carouselContainer.children);
+
+    function moveCarousel() {
+      const imageWidth = carouselContainer.clientWidth;
+      const nextPosition = currentPosition - imageWidth;
+      carouselContainer.style.transform = `translateX(${nextPosition}px)`;
+      currentPosition = nextPosition;
+
+      if (currentPosition <= -(imageWidth * (images.length))) {
+        currentPosition = 0;
+        carouselContainer.style.transform = 'translateX(0)';
+      }
+    }
+
+    setInterval(moveCarousel, 3000);
+
+    var nameElement = document.getElementById("name");
+    var fontSize = 36;
+    var increasing = true;
+    var colors = ["red", "blue", "green", "yellow"];
+    var currentColor = 0;
+
+    function animateName() {
+      if (increasing) {
+        fontSize++;
+        if (fontSize >= 48) {
+          increasing = false;
+        }
+      } else {
+        fontSize--;
+        if (fontSize <= 36) {
+          increasing = true;
+        }
+      }
+
+      nameElement.style.fontSize = fontSize + "px";
+    }
+
+    function changeColor() {
+      currentColor++;
+      if (currentColor >= colors.length) {
+        currentColor = 0;
+      }
+      nameElement.style.color = colors[currentColor];
+    }
+
+    setInterval(animateName, 500);
+    setInterval(changeColor, 1000);
+  </script>
 </body>
 </html>
